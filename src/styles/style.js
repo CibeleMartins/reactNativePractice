@@ -8,8 +8,10 @@ const styles = StyleSheet.create({
         flexGrow: 1,
         backgroundColor: "#00FF7F",
         display: "flex",
-        justifyContent: "space-evenly",
-        padding: 20
+        padding: 20,
+        justifyContent: "center",
+        alignItems: "center"
+        
 
     },
 
@@ -24,6 +26,12 @@ const styles = StyleSheet.create({
     boxBtn: {
         width: "100%",
         height: "20%",
+    },
+
+
+    header: {
+        backgroundColor: "black",
+       
     }
 
 

@@ -8,6 +8,7 @@ import TextButton from './components/Multi';
 import Box from "./components/Box";
 import NumAleatorio from "./components/DesafioNumAleatorio";
 import NomeSobrenome from "./components/nomeSobrenome";
+import Header from "./components/Header";
 
 // style
 import styles from "./styles/style";
@@ -17,16 +18,20 @@ export default function App () {
 
 
     return (
+        <>
+        <Header/>
 
         <View
         style={styles.container}>
 
-            {/* <FirstText
+            
+
+            <FirstText
             text="Welcome to GreenBank!"/>
             <SecondText
             style={styles.textDecor}
             text="Sustainability in financial life for you!"/>
-            <SmallText
+            {/* <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/> */}
 
@@ -42,10 +47,10 @@ export default function App () {
                 nome='Cibele'
                 sobrenome='Martins'></NomeSobrenome> */}
 
-                
+
             
         </View>
-        
+        </>
     )
 
 
