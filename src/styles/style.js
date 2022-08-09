@@ -13,6 +13,13 @@ const styles = StyleSheet.create({
 
     },
 
+    textDecor: {
+        color:"white",
+        fontWeight: 'bold',
+        fontSize: 15
+        
+    },
+
 
     boxBtn: {
         width: "100%",

@@ -6,6 +6,7 @@ import FirstText from './components/Text';
 import {SecondText, SmallText} from './components/Multi';
 import TextButton from './components/Multi';
 import Box from "./components/Box";
+import NumAleatorio from "./components/DesafioNumAleatorio";
 
 // style
 import styles from "./styles/style";
@@ -19,18 +20,22 @@ export default function App () {
         <View
         style={styles.container}>
 
-            <FirstText
+            {/* <FirstText
             text="Welcome to GreenBank!"/>
             <SecondText
+            style={styles.textDecor}
             text="Sustainability in financial life for you!"/>
             <SmallText
             text={<TextButton
-            text="Sou um futuro button"/>}/>
+            text="Sou um futuro button"/>}/> */}
 
 
-            <Box
-            style={styles.boxBtn}/>
-             
+            
+                <NumAleatorio
+                num1={30} 
+                num2={54}></NumAleatorio>
+               
+            
         </View>
         
     )

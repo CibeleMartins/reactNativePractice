@@ -3,11 +3,12 @@ import React from "react";
 import { Text} from "react-native";
 
 
-export function SecondText ({text}) {
+export function SecondText ({text, style}) {
 
     return (
 
-        <Text>{text}</Text>
+        <Text
+        style={style}>{text}</Text>
     )
 }
 
