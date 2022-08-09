@@ -32,7 +32,7 @@ export default function App () {
             text="Welcome to GreenBank!"/>
             <SecondText
             style={styles.textDecor}
-            text="Sustainability in financial life for you!"/>
+            text="Sustainability in financial life"/>
             {/* <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/> */}
