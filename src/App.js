@@ -1,27 +1,14 @@
 import React from "react";
 
+// components
 import { View, StyleSheet} from "react-native";
-
 import FirstText from './components/Text';
 import {SecondText, SmallText} from './components/Multi';
-
 import TextButton from './components/Multi';
+import Box from "./components/Box";
 
-
-const styles = StyleSheet.create({
-
-
-    container: {
-
-        width: "100%",
-        height: "100%",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "space-between"
-
-    }
-   
-})
+// style
+import styles from "./styles/style";
 
 
 export default function App () {
@@ -32,8 +19,6 @@ export default function App () {
         <View
         style={styles.container}>
 
-            
-
             <FirstText
             text="Welcome to GreenBank!"/>
             <SecondText
@@ -41,20 +26,16 @@ export default function App () {
             <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/>
-          
 
-            
 
-           
-
-           
+            <Box
+            style={styles.boxBtn}/>
+             
         </View>
         
     )
 
 
    
-
-
     
 }
