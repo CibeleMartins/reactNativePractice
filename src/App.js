@@ -10,6 +10,8 @@ import NumAleatorio from "./components/DesafioNumAleatorio";
 import NomeSobrenome from "./components/nomeSobrenome";
 import Header from "./components/Header";
 
+import Btn from './components/Button'
+
 // style
 import styles from "./styles/style";
 
@@ -34,7 +36,7 @@ export default function App () {
             {/* <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/> */}
-
+            <Btn/>
 
             
                 {/* <NumAleatorio
