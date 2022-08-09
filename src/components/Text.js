@@ -10,7 +10,10 @@ export default function ({text}) {
     const styles = StyleSheet.create({
 
         text: {
-            fontSize: 50
+
+            fontSize: 20,
+            color: "black",
+            fontWeight: "bold"
         }
     })
 

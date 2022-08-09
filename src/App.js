@@ -3,7 +3,10 @@ import React from "react";
 import { View, StyleSheet} from "react-native";
 
 import FirstText from './components/Text';
-import ScrollBox from "./components/ScrollBox";
+import {SecondText, SmallText} from './components/Multi';
+
+import TextButton from './components/Multi';
+
 
 const styles = StyleSheet.create({
 
@@ -29,17 +32,18 @@ export default function App () {
         <View
         style={styles.container}>
 
-            <ScrollBox>
+            
 
             <FirstText
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. E
-            xcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-            anim id est laborum."/>
+            text="Welcome to GreenBank!"/>
+            <SecondText
+            text="Sustainability in financial life for you!"/>
+            <SmallText
+            text={<TextButton
+            text="Sou um futuro button"/>}/>
+          
 
-            </ScrollBox>
+            
 
            
 
