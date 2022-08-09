@@ -38,9 +38,11 @@ export default function App () {
                 */}
 
 
-                <NomeSobrenome
+                {/* <NomeSobrenome
                 nome='Cibele'
-                sobrenome='Martins'></NomeSobrenome>
+                sobrenome='Martins'></NomeSobrenome> */}
+
+                
             
         </View>
         
