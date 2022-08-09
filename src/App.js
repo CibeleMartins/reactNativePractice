@@ -7,6 +7,7 @@ import {SecondText, SmallText} from './components/Multi';
 import TextButton from './components/Multi';
 import Box from "./components/Box";
 import NumAleatorio from "./components/DesafioNumAleatorio";
+import NomeSobrenome from "./components/nomeSobrenome";
 
 // style
 import styles from "./styles/style";
@@ -31,10 +32,15 @@ export default function App () {
 
 
             
-                <NumAleatorio
+                {/* <NumAleatorio
                 num1={30} 
                 num2={54}></NumAleatorio>
-               
+                */}
+
+
+                <NomeSobrenome
+                nome='Cibele'
+                sobrenome='Martins'></NomeSobrenome>
             
         </View>
         
