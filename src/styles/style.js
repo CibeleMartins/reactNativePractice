@@ -55,6 +55,20 @@ const styles = StyleSheet.create({
         height: 100,
         borderRadius: 5,
         backgroundColor: 'black'
+    },
+
+    input: {
+        width: 200,
+        height: 35,
+        backgroundColor: 'white',
+        borderRadius: 5
+    },
+
+    forms: {
+        width: 400,
+        height: 500,
+        justifyContent: 'space-evenly',
+        alignItems: 'center'
     }
 
 })

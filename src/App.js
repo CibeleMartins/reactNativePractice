@@ -14,6 +14,7 @@ import Contador from "./components/Contador";
 import Btn from './components/Button'
 import Estado1 from "./components/Estado1";
 import Estado2 from "./components/Estado2";
+import FormAccount from "./components/FormAccount";
 
 // style
 import styles from "./styles/style";
@@ -66,6 +67,7 @@ export default function App () {
 
                 <Estado2/>
 
+                {/* <FormAccount/> */}
             
         </View>
         </>
