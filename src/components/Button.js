@@ -5,9 +5,11 @@ import { Button } from 'react-native-paper';
 import styles from '../styles/style';
 
 
-export default () => <Button
-style={styles.initialBtn}
+export default ({text, style, onPress}) => <Button 
+style={style}
 color= "black" 
 mode="contained" 
-onPress={() => console.warn('Clicado')}>
-For you</Button>
+onPress={onPress}>
+{text}</Button>
+
+

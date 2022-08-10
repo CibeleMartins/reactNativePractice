@@ -31,6 +31,7 @@ const styles = StyleSheet.create({
 
     header: {
         backgroundColor: "black",
+        justifyContent: "space-between"
        
     },
 

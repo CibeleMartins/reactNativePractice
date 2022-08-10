@@ -9,6 +9,7 @@ import Box from "./components/Box";
 import NumAleatorio from "./components/DesafioNumAleatorio";
 import NomeSobrenome from "./components/nomeSobrenome";
 import Header from "./components/Header";
+import ButtonReactN from "./components/ButtonReactN";
 
 import Btn from './components/Button'
 
@@ -36,7 +37,10 @@ export default function App () {
             {/* <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/> */}
-            <Btn/>
+            <Btn
+            style={styles.initialBtn}
+            text="For You"
+            onPress={()=> console.warn("onPress passado por props com sucesso")}/>
 
             
                 {/* <NumAleatorio
