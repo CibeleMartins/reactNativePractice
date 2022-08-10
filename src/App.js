@@ -11,11 +11,13 @@ import NomeSobrenome from "./components/nomeSobrenome";
 import Header from "./components/Header";
 import ButtonReactN from "./components/ButtonReactN";
 import Contador from "./components/Contador";
-
 import Btn from './components/Button'
+import Estado1 from "./components/Estado1";
+import Estado2 from "./components/Estado2";
 
 // style
 import styles from "./styles/style";
+
 
 
 export default function App () {
@@ -56,9 +58,13 @@ export default function App () {
                 sobrenome='Martins'></NomeSobrenome> */}
 
 
-                <Contador
-                inicial={0}/>
+                {/* <Contador
+                inicial={0}/> */}
 
+
+                {/* <Estado1/> */}
+
+                <Estado2/>
 
             
         </View>
