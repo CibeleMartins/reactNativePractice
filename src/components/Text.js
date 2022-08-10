@@ -5,21 +5,11 @@ import {Text, StyleSheet} from 'react-native';
 
 
 
-export default function ({text}) {
-
-    const styles = StyleSheet.create({
-
-        text: {
-
-            fontSize: 20,
-            color: "black",
-            fontWeight: "bold"
-        }
-    })
+export default function ({text, style}) {
 
         return (
         <Text
-        style={styles.text}>
+        style={style}>
             {text}
         </Text>
         )

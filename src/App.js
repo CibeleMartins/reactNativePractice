@@ -10,6 +10,7 @@ import NumAleatorio from "./components/DesafioNumAleatorio";
 import NomeSobrenome from "./components/nomeSobrenome";
 import Header from "./components/Header";
 import ButtonReactN from "./components/ButtonReactN";
+import Contador from "./components/Contador";
 
 import Btn from './components/Button'
 
@@ -29,18 +30,19 @@ export default function App () {
 
             
 
+            {/* <FirstText
+            text="Welcome to GreenBank!"
+            style={styles.text}/>
             <FirstText
-            text="Welcome to GreenBank!"/>
-            <SecondText
             style={styles.textDecor}
-            text="Sustainability in financial life"/>
+            text="Sustainability in financial life"/> */}
             {/* <SmallText
             text={<TextButton
             text="Sou um futuro button"/>}/> */}
-            <Btn
+            {/* <Btn
             style={styles.initialBtn}
             text="For You"
-            onPress={()=> console.warn("onPress passado por props com sucesso")}/>
+            onPress={()=> console.warn("onPress passado por props com sucesso")}/> */}
 
             
                 {/* <NumAleatorio
@@ -52,6 +54,10 @@ export default function App () {
                 {/* <NomeSobrenome
                 nome='Cibele'
                 sobrenome='Martins'></NomeSobrenome> */}
+
+
+                <Contador
+                inicial={0}/>
 
 
             

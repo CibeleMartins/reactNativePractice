@@ -15,10 +15,18 @@ const styles = StyleSheet.create({
 
     },
 
+    text: {
+
+        fontSize: 25,
+        color: "black",
+        fontWeight: "bold"
+    },
+
     textDecor: {
         color:"white",
         fontWeight: 'bold',
-        fontSize: 15
+        fontSize: 15,
+        marginTop: 5
         
     },
 
