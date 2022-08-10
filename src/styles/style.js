@@ -23,17 +23,21 @@ const styles = StyleSheet.create({
     },
 
 
-    boxBtn: {
-        width: "100%",
-        height: "20%",
+    boxImg: {
+        width: 120,
+        height: 50,
     },
 
 
     header: {
         backgroundColor: "black",
        
-    }
+    },
 
+    initialBtn: {
+
+        marginTop: 20
+    }
 
 })
 

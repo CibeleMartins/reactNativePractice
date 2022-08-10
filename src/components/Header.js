@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { Appbar} from 'react-native-paper';
-import { View} from 'react-native';
+import { View, Image} from 'react-native';
+import Box from './Box'
 
 import styles from '../styles/style'
 
@@ -13,7 +14,9 @@ export default function Header () {
         
         <Appbar.Header
         style={styles.header}>
-            <Appbar.Content title="GreenBank"/>
+            <Image
+            style={styles.boxImg}
+            source={require('../assets/logoMax.png')}/>
         </Appbar.Header>
         
 
