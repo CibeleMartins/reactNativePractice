@@ -48,6 +48,13 @@ const styles = StyleSheet.create({
         marginTop: 20,
         height: 35,
        
+    },
+
+    boxState: {
+        width: 100,
+        height: 100,
+        borderRadius: 5,
+        backgroundColor: 'black'
     }
 
 })
