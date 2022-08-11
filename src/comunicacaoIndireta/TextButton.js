@@ -2,6 +2,9 @@ import React from 'react'
 import {Button, Text} from 'react-native'
 
 
+import styles from '../styles/style'
+
+
 export default (props)=> {
 
 

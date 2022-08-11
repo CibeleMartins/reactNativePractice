@@ -10,6 +10,7 @@ import styles from '../styles/style';
 
 export default (props)=> {
 
+
     return (
 
             <View
@@ -50,7 +51,8 @@ export default (props)=> {
 
                 <Button
                 style={{marginTop: 15}}
-                text="REGISTER"/>
+                text="REGISTER"
+                onPress={()=> console.warn("Successfully registered! Log in!")}/>
 
                 <Button
                 style={{marginTop: 15}}

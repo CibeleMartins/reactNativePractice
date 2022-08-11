@@ -18,6 +18,7 @@ import FormAccount from "./components/FormAccount";
 import Superior from "./comunicacaoDireta/Superior";
 import Pai from './comunicacaoIndireta/Pai';
 import Caixa from './comunicacaoIndireta/Caixa';
+import ContadorV2 from "./comunicacaoDeI/ContadorV2";
 
 // style
 import styles from "./styles/style";
@@ -76,8 +77,9 @@ export default function App () {
                 
                 {/* <Pai/> */}
 
+                {/*  <Caixa/> */}
 
-                <Caixa/>
+                <ContadorV2/>
         </View>
         </>
     )

@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
     },
 
     boxState: {
-        width: 100,
-        height: 100,
+        width: 300,
+        height: 300,
         borderRadius: 5,
         backgroundColor: 'white'
     },
