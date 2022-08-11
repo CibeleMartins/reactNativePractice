@@ -8,14 +8,14 @@ import Button from './Button';
 import styles from '../styles/style';
 
 
-export default ()=> {
+export default (props)=> {
 
 
     return (
 
 
             <View
-         
+            display={props.display}
             style={styles.forms}>
 
                 <FirstText

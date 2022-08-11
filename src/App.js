@@ -15,6 +15,7 @@ import Btn from './components/Button'
 import Estado1 from "./components/Estado1";
 import Estado2 from "./components/Estado2";
 import FormAccount from "./components/FormAccount";
+import Superior from "./comunicacaoDireta/Superior";
 
 // style
 import styles from "./styles/style";
@@ -65,9 +66,11 @@ export default function App () {
 
                 {/* <Estado1/> */}
 
-                <Estado2/>
+                {/* <Estado2/> */}
 
                 {/* <FormAccount/> */}
+
+                <Superior/>
             
         </View>
         </>
