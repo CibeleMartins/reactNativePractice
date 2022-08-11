@@ -16,6 +16,7 @@ import Estado1 from "./components/Estado1";
 import Estado2 from "./components/Estado2";
 import FormAccount from "./components/FormAccount";
 import Superior from "./comunicacaoDireta/Superior";
+import Pai from './comunicacaoIndireta/Pai'
 
 // style
 import styles from "./styles/style";
@@ -70,8 +71,9 @@ export default function App () {
 
                 {/* <FormAccount/> */}
 
-                <Superior/>
-            
+                {/* <Superior/> */}
+                
+                <Pai/>
         </View>
         </>
     )

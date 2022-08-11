@@ -10,9 +10,7 @@ import styles from '../styles/style';
 
 export default (props)=> {
 
-
     return (
-
 
             <View
             display={props.display}
@@ -53,6 +51,11 @@ export default (props)=> {
                 <Button
                 style={{marginTop: 15}}
                 text="REGISTER"/>
+
+                <Button
+                style={{marginTop: 15}}
+                text="Back"
+                {...props}/>
                 
             </View>
 
