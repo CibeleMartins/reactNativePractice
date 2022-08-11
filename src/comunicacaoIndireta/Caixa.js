@@ -1,5 +1,5 @@
-import React from 'react'
-import {View} from 'react-native'
+import React, {useState} from 'react'
+import {View, Text} from 'react-native'
 
 
 import styles from '../styles/style'
@@ -10,15 +10,17 @@ import TextButton from './TextButton'
 export default (props)=> {
 
 
-    function exibeMsg(mensagem){
+  
 
+    function exibeMsg(mensagem){
 
         const resultado = mensagem
                 
-        return console.warn(resultado)
+        return setMsg(resultado)
 
     }
 
+    const [mensagem, setMsg] = useState('')
 
 
      return(
@@ -27,6 +29,7 @@ export default (props)=> {
 
            <View
            style={styles.boxState}>
+            <Text>{mensagem}</Text>
            </View>
 
 
