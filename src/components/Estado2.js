@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import FirstText from './Text';
 import Button from './Button';
+import FormAccount from './FormAccount';
 
 
 import styles from '../styles/style';
@@ -84,56 +85,11 @@ export default () => {
                  onPress={changeDisplay1}/>
             </View>
 
+            <FormAccount
+            display={display2}
+            onPress={backRegister}/>         
 
-            <View
-            style={styles.forms}
-            display={display2}>
-
-             <FirstText
-             text='Be very welcome!'
-             style={styles.text}/>
-
-             <FirstText
-             style={styles.textDecor}
-             text="Follow the steps below to create your account"/> 
-
-             <TextInput
-             style={styles.input}
-             placeholder="  Name"/>
-
-             <TextInput
-             style={styles.input}
-             placeholder="  Last Name"/>
-
-             <TextInput
-             style={styles.input}
-             placeholder="  Identify Document"/>
-
-             <TextInput
-             style={styles.input}
-             placeholder="  Address"/>
-
-             <TextInput
-             style={styles.input}
-             placeholder="  E-mail"/>
-
-             <TextInput
-             style={styles.input}
-             placeholder="  Password"/>
-
-             <Button
-             style={{marginTop: 15}}
-             text="REGISTER"/>
-    
-                <Button
-                 style={styles.initialBtn}
-                 text="back"
-                 onPress={backRegister}/>
-                 
-         </View>
-
-               
-
+                
         </>
     )
 }
