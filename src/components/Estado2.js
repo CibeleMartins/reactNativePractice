@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import FirstText from './Text';
 import Button from './Button';
 import FormAccount from './FormAccount';
+import Box from './Box';
 
 
 import styles from '../styles/style';
@@ -67,7 +68,6 @@ export default (props) => {
       
     }
 
-  
 
     return (
 
@@ -107,17 +107,22 @@ export default (props) => {
             onPress={backRegister}
             funcao={exibeEstados}/>     
 
-            <View
-            style={styles.boxState}
+
+            <Box
+            style={styles.boxRegistro}
             display={viewRegistros}>
 
-                {estadosDeRegistro.map((item, index)=> {
+                <Text
+                style={[styles.textDecor, styles.textRegister]}>Account created successfully!</Text>
 
+                {estadosDeRegistro.map((item, index)=> {
+                    
                     return <Text
+                    style={[styles.textDecor, styles.textDadosReg]}
                     key={index}>{item}</Text>
                 })}
             
-            </View>
+            </Box>
 
                 
         </>

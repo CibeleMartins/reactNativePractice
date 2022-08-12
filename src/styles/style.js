@@ -83,6 +83,31 @@ const styles = StyleSheet.create({
     img: {
         width: 200,
         height: 200,
+    },
+
+    boxRegistro: {
+        width: 350,
+        height: 650,
+        backgroundColor: 'black',
+        borderRadius: 15,
+        alignItems: 'center'
+    },
+    
+    textRegister: {
+        fontSize: 30,
+        fontWeight: '300',
+        textAlign: 'center',
+        marginTop: 30
+        
+    },
+
+    textDadosReg: {
+
+        fontSize: 22,
+        fontWeight: '100',
+        textAlign: 'center',
+        marginTop: 40
+
     }
 
 })

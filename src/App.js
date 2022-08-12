@@ -40,9 +40,9 @@ export default function App () {
 
         {/* <BoxMensagem/> */}
 
-        {/* <FormAccount/> */}
-
         <Estado2/>
+
+
         </View>
         </>
     )
