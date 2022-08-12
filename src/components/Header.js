@@ -4,11 +4,9 @@ import { Appbar} from 'react-native-paper';
 import { View, Image} from 'react-native';
 import Button from './Button'
 
-
 import styles from '../styles/style'
 
-
-export default function Header () {
+export default function Header (props) {
 
     function implementLogin () {
 
