@@ -11,8 +11,8 @@ export default (props)=> {
 
         <>
 
-            <Button style={styles.initialBtn}  text='+'onPress={props.inc}/>
-            <Button style={styles.initialBtn} text='-'onPress={props.dec}/>
+            <Button style={styles.initialBtn}  text='+' onPress={props.inc}/>
+            <Button style={styles.initialBtn} text='-' onPress={props.dec}/>
 
         </>
      

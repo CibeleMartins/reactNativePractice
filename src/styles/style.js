@@ -54,7 +54,9 @@ const styles = StyleSheet.create({
         width: 300,
         height: 300,
         borderRadius: 5,
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        alignItems: 'center',
+        justifyContent: 'center'
     },
 
     input: {
@@ -69,6 +71,18 @@ const styles = StyleSheet.create({
         height: 500,
         justifyContent: 'space-evenly',
         alignItems: 'center'
+    },
+
+    boxImage: {
+        width: 200,
+        height: 200,
+        backgroundColor: 'red',
+        
+    },
+
+    img: {
+        width: 200,
+        height: 200,
     }
 
 })

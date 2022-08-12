@@ -6,10 +6,30 @@ import FirstText from './Text';
 import Button from './Button';
 
 import styles from '../styles/style';
+import { useTheme } from 'react-native-paper';
 
 
 export default (props)=> {
 
+
+    const [userName, setUserName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [id, setId] = useState('')
+    const [address, setAddress] = useState('')
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
+
+
+    function retornaEstados () {
+
+
+        const estados = [userName, lastName, id, address, email, password]
+
+        return estados
+    }
+
+
+    // console.warn(userName, lastName, id, address, email, password)
 
     return (
 
@@ -27,32 +47,48 @@ export default (props)=> {
 
                 <TextInput
                 style={styles.input}
-                placeholder="  Name"/>
+                placeholder="  Name"
+                value={userName}
+                onChangeText={setUserName}
+                />
 
                 <TextInput
                 style={styles.input}
-                placeholder="  Last Name"/>
+                placeholder="  Last Name"
+                value={lastName}
+                onChangeText={setLastName}/>
 
                 <TextInput
                 style={styles.input}
-                placeholder="  Identify Document"/>
+                placeholder="  Identify Document"
+                value={id}
+                onChangeText={setId}/>
 
                 <TextInput
                 style={styles.input}
-                placeholder="  Address"/>
+                placeholder="  Address"
+                value={address}
+                onChangeText={setAddress}/>
 
                 <TextInput
                 style={styles.input}
-                placeholder="  E-mail"/>
+                placeholder="  E-mail"
+                value={email}
+                onChangeText={setEmail}/>
 
                 <TextInput
                 style={styles.input}
-                placeholder="  Password"/>
+                placeholder="  Password"
+                value={password}
+                onChangeText={setPassword}/>
 
                 <Button
                 style={{marginTop: 15}}
                 text="REGISTER"
-                onPress={()=> console.warn("Successfully registered! Log in!")}/>
+                onPress={function () {
+                    const estadosResultados = retornaEstados()
+                    props.funcao(estadosResultados)
+                }}/>
 
                 <Button
                 style={{marginTop: 15}}

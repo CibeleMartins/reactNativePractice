@@ -18,10 +18,12 @@ import FormAccount from "./components/FormAccount";
 import Superior from "./comunicacaoDireta/Superior";
 import Pai from './comunicacaoIndireta/Pai';
 import ContadorV2 from "./comunicacaoDeI/ContadorV2";
-import CaixaMensagem from "./comunicacaoDeI/CaixaMensagem";
+import BoxMensagem from "./comunicacaoIndireta/BoxMensagem";
+
 
 // style
 import styles from "./styles/style";
+
 
 
 
@@ -31,13 +33,16 @@ export default function App () {
 
     return (
         <>
+      
         <Header/>
-
         <View
         style={styles.container}>
 
+        {/* <BoxMensagem/> */}
 
-                <CaixaMensagem/>
+        {/* <FormAccount/> */}
+
+        <Estado2/>
         </View>
         </>
     )

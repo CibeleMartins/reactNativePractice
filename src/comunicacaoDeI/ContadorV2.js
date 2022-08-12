@@ -21,7 +21,7 @@ export default (props)=> {
 
         <>
 
-            <Text>Contador</Text>
+            <Text style={styles.text}>Contador</Text>
            <ContadorDisplay num={num}/>
            <Buttons inc={inc} dec={dec}/>
 

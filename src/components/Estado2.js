@@ -6,10 +6,10 @@ import FormAccount from './FormAccount';
 
 
 import styles from '../styles/style';
-import { View, TextInput} from 'react-native';
+import { View, Text} from 'react-native';
 
 
-export default () => {
+export default (props) => {
 
 
     const [display, setDisplay] = useState('flex')
@@ -17,6 +17,11 @@ export default () => {
     const [display1, setDisplay1] = useState('none')
 
     const [display2, setDisplay2] = useState('none')
+
+    const [estadosDeRegistro, setEstadosReg] = useState([])
+
+
+    const [viewRegistros, setViewReg] = useState('none')
 
 
     const changeDisplay = ()=> {
@@ -51,6 +56,18 @@ export default () => {
 
         }
     }
+
+
+
+    function exibeEstados(estados) {
+
+        const resultado = estados
+
+        return setEstadosReg(resultado), setDisplay2('none'), setViewReg('flex')
+      
+    }
+
+  
 
     return (
 
@@ -87,7 +104,20 @@ export default () => {
 
             <FormAccount
             display={display2}
-            onPress={backRegister}/>         
+            onPress={backRegister}
+            funcao={exibeEstados}/>     
+
+            <View
+            style={styles.boxState}
+            display={viewRegistros}>
+
+                {estadosDeRegistro.map((item, index)=> {
+
+                    return <Text
+                    key={index}>{item}</Text>
+                })}
+            
+            </View>
 
                 
         </>
