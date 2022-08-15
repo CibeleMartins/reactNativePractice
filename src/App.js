@@ -33,6 +33,8 @@ import Operacao from "./renderizacaoCondicional/Operacao";
 import ListaProdutos from "./ListaProdutos/ListaProdutos";
 import ListaNomes from "./ListaNomes/ListaNomes";
 import ListaUsuariosDevedores from "./ListaNomes/ListaUsuariosDevedores";
+import ListaProdutosV2 from "./ListaProdutos/ListaProdutosV2";
+import ListaNomesV2 from "./ListaNomes/ListaNomesV2";
 
 
 export default function App () {
@@ -63,7 +65,11 @@ export default function App () {
 
             {/* <ListaNomes/> */}
 
-            <ListaUsuariosDevedores/>
+            {/* <ListaUsuariosDevedores/> */}
+
+            {/* <ListaProdutosV2/> */}
+
+            <ListaNomesV2/>
            
 
         </View>
