@@ -28,6 +28,9 @@ import RCondicional from "./renderizacaoCondicional/RCondicional";
 import RCondicional1 from "./renderizacaoCondicional/RCondicional1";
 
 import RCondicional2 from "./renderizacaoCondicional/RCondicional2";
+import Usuario from './renderizacaoCondicional/Usuario';
+import Operacao from "./renderizacaoCondicional/Operacao";
+
 
 export default function App () {
 
@@ -45,9 +48,13 @@ export default function App () {
 
             {/* <Login/> */}
 
-            <RCondicional2
-            num1={3} num2={0}/>
+            {/* <RCondicional2
+            num1={3} num2={0}/> */}
 
+            {/* <Usuario
+            usuario={{nome: 'Josh', email: 'joshcallfmann@hotmail.com'}}/> */}
+
+            <Operacao num1={50} num2={2}/>
            
 
         </View>
