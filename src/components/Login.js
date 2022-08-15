@@ -1,38 +1,39 @@
 import React from 'react'
-import {View, TextInput, Text} from 'react-native'
+import {View, TextInput, Text, Image} from 'react-native'
 
 import styles from '../styles/style'
 
-
 export default (props)=> {
-
 
      return(
 
            <>
 
-            <View>
+            <View
+            display={props.display}
+            style={styles.boxLogin}>
+
+                <Image
+                source={require('../assets/logoMin.png')}
+                style={styles.img}/>
 
                 <Text
-                styles={styles.textRegister}>Log into your account
+                style={styles.textRegister}>Log into your account
                 </Text>
+               
 
                 <TextInput
                 style={styles.input}
                 placeholder="E-mail or Id"/>
                 <TextInput
                 placeholder="Password"
+                secureTextEntry={true}
                 style={styles.input}/>
 
             </View>
            
-           
-           
            </>
 
-
         )
-
-
 
 }

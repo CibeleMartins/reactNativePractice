@@ -23,10 +23,11 @@ import BoxMensagem from "./comunicacaoIndireta/BoxMensagem";
 
 // style
 import styles from "./styles/style";
+import Login from "./components/Login";
+import RCondicional from "./renderizacaoCondicional/RCondicional";
+import RCondicional1 from "./renderizacaoCondicional/RCondicional1";
 
-
-
-
+import RCondicional2 from "./renderizacaoCondicional/RCondicional2";
 
 export default function App () {
 
@@ -40,8 +41,14 @@ export default function App () {
 
         {/* <BoxMensagem/> */}
 
-        <Estado2/>
+        {/* <Estado2/> */}
 
+            {/* <Login/> */}
+
+            <RCondicional2
+            num1={3} num2={0}/>
+
+           
 
         </View>
         </>

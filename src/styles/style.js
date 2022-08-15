@@ -81,8 +81,8 @@ const styles = StyleSheet.create({
     },
 
     img: {
-        width: 200,
-        height: 200,
+        width: 300,
+        height: 100,
     },
 
     boxRegistro: {
@@ -97,7 +97,8 @@ const styles = StyleSheet.create({
         fontSize: 30,
         fontWeight: '300',
         textAlign: 'center',
-        marginTop: 30
+        marginTop: 30,
+        color: "white"
         
     },
 
@@ -107,6 +108,18 @@ const styles = StyleSheet.create({
         fontWeight: '100',
         textAlign: 'center',
         marginTop: 40
+
+    },
+
+    boxLogin: {
+
+        width: 350,
+        height: 600,
+        backgroundColor: 'black',
+        borderRadius: 15,
+        alignItems: 'center',
+        justifyContent: 'space-evenly'
+
 
     }
 

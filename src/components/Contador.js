@@ -34,7 +34,7 @@ import {Text, Button} from 'react-native';
 // }
 
 
-export default (props) => {
+export default ({props}) => {
 
     const [numero, setValor] = useState(props.inicial)
 

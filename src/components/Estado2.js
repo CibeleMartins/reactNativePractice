@@ -4,6 +4,7 @@ import FirstText from './Text';
 import Button from './Button';
 import FormAccount from './FormAccount';
 import Box from './Box';
+import Login from './Login';
 
 
 import styles from '../styles/style';
@@ -21,8 +22,9 @@ export default (props) => {
 
     const [estadosDeRegistro, setEstadosReg] = useState([])
 
-
     const [viewRegistros, setViewReg] = useState('none')
+
+    const [displayLogin, setLogin] = useState('none')
 
 
     const changeDisplay = ()=> {
@@ -66,6 +68,13 @@ export default (props) => {
 
         return setEstadosReg(resultado), setDisplay2('none'), setViewReg('flex')
       
+    }
+
+
+
+    function exibeLogin() {
+
+        return setLogin('flex')
     }
 
 
@@ -124,7 +133,14 @@ export default (props) => {
             
             </Box>
 
+
+            <Login
+            display={displayLogin}
+            funcaoLogin={exibeLogin}/>
+
                 
         </>
     )
 }
+
+
