@@ -1,7 +1,7 @@
 import React, {useState}from "react";
 
 // components
-import { View, StyleSheet, Text, Image} from "react-native";
+import { View, StyleSheet, Text, FlatList} from "react-native";
 import FirstText from './components/Text';
 import {SecondText, SmallText} from './components/Multi';
 import TextButton from './components/Multi';
@@ -35,9 +35,7 @@ import ListaNomes from "./ListaNomes/ListaNomes";
 import ListaUsuariosDevedores from "./ListaNomes/ListaUsuariosDevedores";
 import ListaProdutosV2 from "./ListaProdutos/ListaProdutosV2";
 import ListaNomesV2 from "./ListaNomes/ListaNomesV2";
-import ListaDados from "./renderizacaoCondicListas/ListaDados";
 import api from "./services/Api";
-import { configureFonts } from "react-native-paper";
 
 
 export default function App () {
@@ -46,7 +44,7 @@ export default function App () {
 
     async function pegaPokemons () {
 
-        const response = await api.get('pokemon?limit=3')
+        const response = await api.get('pokemon?limit=20')
 
         const {data} = response
 
@@ -78,16 +76,23 @@ export default function App () {
 
                 {/* <Usuario
                 usuario={{nome: 'Josh', email: 'joshcallfmann@hotmail.com'}}/> */}
-
              
-                     {pokemons.results.map((p)=> {
+                     {/* {pokemons.results.map((p)=> {
 
                        return <>
 
-                        <Text>{p.name}</Text>
+                        <Text style={styles.text}>{p.name}</Text>
                         
                        </>
-                    })}
+                    })} */}
+
+                    <FlatList
+                    data={pokemons.results}
+                    keyExtractor={ i => i.name}
+                    renderItem={({item: p})=> {
+
+                        return <Text>{p.name}</Text>
+                    }}/>
              
 
             </View>
