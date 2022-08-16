@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useState}from "react";
 
 // components
-import { View, StyleSheet} from "react-native";
+import { View, StyleSheet, Text, Image} from "react-native";
 import FirstText from './components/Text';
 import {SecondText, SmallText} from './components/Multi';
 import TextButton from './components/Multi';
@@ -35,9 +35,29 @@ import ListaNomes from "./ListaNomes/ListaNomes";
 import ListaUsuariosDevedores from "./ListaNomes/ListaUsuariosDevedores";
 import ListaProdutosV2 from "./ListaProdutos/ListaProdutosV2";
 import ListaNomesV2 from "./ListaNomes/ListaNomesV2";
+import ListaDados from "./renderizacaoCondicListas/ListaDados";
+import api from "./services/Api";
+import { configureFonts } from "react-native-paper";
 
 
 export default function App () {
+
+    const [pokemons, setPokemons] = useState([])
+
+    async function pegaPokemons () {
+
+        const response = await api.get('pokemon?limit=3')
+
+        const {data} = response
+
+        return setPokemons(data)
+
+        
+    }
+
+    pegaPokemons()
+    console.warn(pokemons)
+
 
 
     return (
@@ -59,18 +79,16 @@ export default function App () {
                 {/* <Usuario
                 usuario={{nome: 'Josh', email: 'joshcallfmann@hotmail.com'}}/> */}
 
-                {/* <Operacao num1={50} num2={2}/> */}
+             
+                     {pokemons.results.map((p)=> {
 
-                {/* <ListaProdutos/> */}
+                       return <>
 
-                {/* <ListaNomes/> */}
-
-                {/* <ListaUsuariosDevedores/> */}
-
-                {/* <ListaProdutosV2/> */}
-
-                {/* <ListaNomesV2/> */}
-            
+                        <Text>{p.name}</Text>
+                        
+                       </>
+                    })}
+             
 
             </View>
         </>
