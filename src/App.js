@@ -35,6 +35,7 @@ import ListaNomes from "./ListaNomes/ListaNomes";
 import ListaUsuariosDevedores from "./ListaNomes/ListaUsuariosDevedores";
 import ListaProdutosV2 from "./ListaProdutos/ListaProdutosV2";
 import ListaNomesV2 from "./ListaNomes/ListaNomesV2";
+import If from "./renderizacaoCondicional/If";
 import api from "./services/Api";
 
 
@@ -86,14 +87,18 @@ export default function App () {
                        </>
                     })} */}
 
-                    <FlatList
-                    data={pokemons.results}
-                    keyExtractor={ i => i.name}
-                    renderItem={({item: p})=> {
+                    <If teste={pokemons.results}>
+
+                         <FlatList
+                            data={pokemons.results}
+                            keyExtractor={ i => i.name}
+                            renderItem={({item: p})=> {
 
                         return <Text>{p.name}</Text>
                     }}/>
-             
+                    </If>
+
+                   
 
             </View>
         </>
