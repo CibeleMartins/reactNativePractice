@@ -44,35 +44,35 @@ export default function App () {
         <>
       
         <Header/>
-        <View
-        style={styles.container}>
+            <View
+            style={styles.container}>
 
-        {/* <BoxMensagem/> */}
+            {/* <BoxMensagem/> */}
 
-        {/* <Estado2/> */}
+            {/* <Estado2/> */}
 
-            {/* <Login/> */}
+                {/* <Login/> */}
 
-            {/* <RCondicional2
-            num1={3} num2={0}/> */}
+                {/* <RCondicional2
+                num1={3} num2={0}/> */}
 
-            {/* <Usuario
-            usuario={{nome: 'Josh', email: 'joshcallfmann@hotmail.com'}}/> */}
+                {/* <Usuario
+                usuario={{nome: 'Josh', email: 'joshcallfmann@hotmail.com'}}/> */}
 
-            {/* <Operacao num1={50} num2={2}/> */}
+                {/* <Operacao num1={50} num2={2}/> */}
 
-            {/* <ListaProdutos/> */}
+                {/* <ListaProdutos/> */}
 
-            {/* <ListaNomes/> */}
+                {/* <ListaNomes/> */}
 
-            {/* <ListaUsuariosDevedores/> */}
+                {/* <ListaUsuariosDevedores/> */}
 
-            {/* <ListaProdutosV2/> */}
+                {/* <ListaProdutosV2/> */}
 
-            <ListaNomesV2/>
-           
+                {/* <ListaNomesV2/> */}
+            
 
-        </View>
+            </View>
         </>
     )
 
