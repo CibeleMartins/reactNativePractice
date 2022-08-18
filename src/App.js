@@ -37,6 +37,7 @@ import ListaProdutosV2 from "./ListaProdutos/ListaProdutosV2";
 import ListaNomesV2 from "./ListaNomes/ListaNomesV2";
 import If from "./renderizacaoCondicional/If";
 import api from "./services/Api";
+import ListaInputs from "./ListaInputs/ListaInputs";
 
 
 export default function App () {
@@ -55,7 +56,7 @@ export default function App () {
     }
 
     pegaPokemons()
-    console.warn(pokemons)
+    
 
 
 
@@ -86,7 +87,7 @@ export default function App () {
                         
                        </>
                     })} */}
-
+{/* 
                     <If teste={pokemons.results}>
 
                          <FlatList
@@ -96,9 +97,9 @@ export default function App () {
 
                         return <Text>{p.name}</Text>
                     }}/>
-                    </If>
+                    </If> */}
 
-                   
+                   <ListaInputs/>
 
             </View>
         </>
