@@ -121,6 +121,11 @@ const styles = StyleSheet.create({
         justifyContent: 'space-evenly'
 
 
+    },
+
+    textError: {
+        color: 'red',
+        fontSize: 13
     }
 
 })

@@ -4,9 +4,13 @@ import {FlatList, Text, TextInput} from 'react-native'
 
 import styles from '../styles/style'
 
+import If from './If'
+
+
+export const placeholders = ["Nome", "Senha", "Email", "CPF"]
+
 export default (props)=> {
 
-    const placeholders = ["Nome", "Senha", "Email", "CPF"]
 
 
      return(
@@ -22,6 +26,9 @@ export default (props)=> {
                     style={styles.input}/>
                  })} */}
 
+
+                 <If verificacao={true}>
+
                  <FlatList
                  data={placeholders}
                  keyExtractor={item => item.index}
@@ -30,8 +37,24 @@ export default (props)=> {
                     return <TextInput
                     style={styles.input}
                     placeholder={p}/>
+
                  }}
                  />
+
+
+                 </If>
+
+                 {/* <FlatList
+                 data={placeholders}
+                 keyExtractor={item => item.index}
+                 renderItem={({item:p})=> {
+
+                    return <TextInput
+                    style={styles.input}
+                    placeholder={p}/>
+
+                 }}
+                 /> */}
 
                 
             </>

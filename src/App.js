@@ -1,11 +1,11 @@
 import React, {useState}from "react";
+import { NativeBaseProvider, Box } from "native-base" ;  
 
 // components
 import { View, StyleSheet, Text, FlatList} from "react-native";
 import FirstText from './components/Text';
 import {SecondText, SmallText} from './components/Multi';
 import TextButton from './components/Multi';
-import Box from "./components/Box";
 import NumAleatorio from "./components/DesafioNumAleatorio";
 import NomeSobrenome from "./components/nomeSobrenome";
 import Header from "./components/Header";
@@ -40,6 +40,7 @@ import api from "./services/Api";
 import ListaInputs from "./ListaInputs/ListaInputs";
 
 
+
 export default function App () {
 
     const [pokemons, setPokemons] = useState([])
@@ -56,16 +57,15 @@ export default function App () {
     }
 
     pegaPokemons()
-    
-
 
 
     return (
         <>
-      
-        <Header/>
-            <View
-            style={styles.container}>
+
+  
+
+     
+        
 
             {/* <BoxMensagem/> */}
 
@@ -99,10 +99,18 @@ export default function App () {
                     }}/>
                     </If> */}
 
-                   <ListaInputs/>
+                   {/* <ListaInputs/> */}
 
-            </View>
-        </>
+
+                   <NativeBaseProvider>
+                    <Header/>
+                    <Box style={styles.container}>
+
+           
+                    </Box>
+                    </NativeBaseProvider>
+       
+            </>
     )
 
 
